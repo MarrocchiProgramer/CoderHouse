@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     height: 300vh;
     width: 100vw;
+    background-color: red;
 }
 
 /* EMPIEZA HEADER */
