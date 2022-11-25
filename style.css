@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* EMPIEZA HEADER */
+#header{
+   display: flex;
+   flex-direction: column;
+   width: 100%; 
+   height: 20%;
+}
+
+.section1-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #60646D;
+}
+
+.info-section1, .info2-section1{
+    display: inline;
+    font-size: 16px;
+}
+
+.info-section1 span, .info2-section1 span {
+    font-weight: bold;
+}
+
+.section2-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background-color: #473eab;
+}
+
+.logo-header{
+    margin-left: 40px;
+    height: 90px;
+    width: 90px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+
+.links-contacto, .links-servicios, .links-ubicacion, .links-producto,.links-home{
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+.links-contacto:link, .links-servicios:link, .links-ubicacion:link, .links-producto:link,.links-home:link{
+    text-decoration: none;
+    color: white;
+}
+.links-contacto:hover, .links-servicios:hover, .links-ubicacion:hover, .links-producto:hover,.links-home:hover{
+    text-decoration: none;
+    background-color: #2e6da4;
+    color: white;
+}
+
+.verificacion-header{
+    display: flex;
+    margin-right: 40px;
+    justify-content: space-around;
+    width: 300px;
+    margin-left: 500px;
+}
+
+.cuenta-box-header, .ingresa-box-header{
+    padding: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+}
+
+
+.cuenta-box-header, .ingresa-box-header{
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.cuenta-header, .ingresa-header{
+    color: white;
+}
+
+
+.cuenta-header:link, .ingresa-header:link{
+    text-decoration: none;
+    color: white;
+}
+.cuenta-header:visited, .ingresa-header:visited{
+    text-decoration: none;
+    color: white;
+} 
+.cuenta-header:hover, .ingresa-header:hover{
+    background-color: #2e6da4;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+/* TERMINA HEADER */
+
+/* EMPIEZA MAIN */
+#main{
+    height: 40%;
+    border: 2px solid red;
+}
+
+/* TERMINA MAIN*/
+
+/* EMPIEZA FOOTER */
+#footer{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 100%;
+    background-color: #3A3C41;
+}
+
+.footer-contacto{
+    width: 150px;
+    height: 150px;
+    margin: 40px 0px 0px 50px;
+}
+
+.footer-contacto li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid #555555;
+}
+
+.footer-contacto a,h5{
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-contacto a:link{
+    list-style: none;
+    color: white;
+}
+
+.footer-contacto a:visited{
+    list-style: none;
+    color: white;
+}
+
+.footer-img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+}
+
+.footer-text{
+    color: #777777;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    margin-left: 20%;
+}
+
+/* TERMINA FOOTER */

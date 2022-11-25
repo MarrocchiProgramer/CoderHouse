@@ -1,0 +1,145 @@
+<body>
+        <!-- <img src="imagenes/background.png" alt="background"> -->
+            <header>
+                <h1>Aires acondicionados</h1>
+                <a href="#">Numero de contacto directo</a>
+                <img src="imagenes/Logo pagina web VP instalaciones.png" alt="logo instalaciones">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/servicios.html">Servicios</a></li>
+                        <li><a href="pages/ubicacion.html">ubicacion</a></li>
+                        <li><a href="pages/producto.html">producto</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                        <li><a href="https://www.google.com" target="_blank">Ir a GOOGLE</a></li>
+                    </ul>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
+            <main>
+                <section>
+                    <h2>Productos</h2>
+                    <a href="#">Puertas</a>
+                    <a href="#">Portones</a>
+                    <a href="#">Ventanas</a>
+                    <a href="#">Mamparas de baño</a>
+                    <a href="#">Ventanas de balcon</a>
+                    <hr>
+                </section>
+                
+                <section> 
+                    <h3>Que servicios ofrecemos</h3>
+                    <ul>
+                        <ol>Limpieza de Aberturas</ol>
+                        <ol>Colocacion/reemplazo de vidrios</ol>
+                        <ol>Colocacion/reemplazo de burletes felpas</ol>
+                        <ol>Reemplazo de medias de ventanas corredizas</ol>
+                        <ol>Puesta de funcionamiento de ventanas</ol>
+                    </ul>
+                    <hr>
+                </section> 
+            </main>
+            <footer>
+                <h3>Galeria</h3>
+                <p>Aca dejamos un video</p>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/U0nv1aieIUg?list=PLzBp6630lD74aEPzaWNdhsWFnJy07CRuO" title="Rick Bars x Cozz - Don't Waste My Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </footer>
+    </body>
+
+
+    ------------------------------------------------------------    ------------------------------------------------------------
+        ------------------------------------------------------------     ------------------------------------------------------------
+
+        
+body{
+    background-color: #EBEBEB;
+    height: 90%;
+    width: 100%;
+}
+
+.section1{
+    display: fixed;
+    width: 100vw;
+    height: 8vh;
+    background-color: #60646D;
+}
+
+.section2{
+    display: fixed;
+    width: 100vw;
+    height: 22vh;
+    background-color: #473eab;
+}
+
+.info-section1{
+    margin: 0;  
+    padding-top: 10px;
+    color: #BBBFC3;
+    text-align: center;
+    
+}
+.info2-section1{
+    color: #BBBFC3;
+}
+
+
+.logo-header{
+    margin-left: 50px;
+    height: 120px;
+    width: 120px;
+}
+
+.search{
+    padding: 5px;
+    margin-left: 10vh;
+    border: none;
+    border-radius: 5px;
+    width: 550px;
+}
+
+.dropdown{
+    margin-left: 130vh;
+    margin-top: -78px;
+}
+
+.verificacion-header{
+    display: flex;
+    flex-direction: row;
+    margin-left: 165vh;
+    margin-top: -70.4px;
+}
+
+.cuenta-box-header{
+    position: relative;
+    margin-right: 5px;
+    list-style-type: none;
+}
+.ingresa-box-header{
+    position: relative;
+    margin-left: 5px;
+    list-style-type: none;
+}
+
+.cuenta-header, .ingresa-header{
+    padding: 9.45px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #337ab7;
+}
+
+
+.cuenta-header:link, .ingresa-header:link{
+    text-decoration: none;
+    color: white;
+}
+.cuenta-header:visited, .ingresa-header:visited{
+    text-decoration: none;
+    color: white;
+}
+.cuenta-header:hover, .ingresa-header:hover{
+    background-color: #2e6da4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
