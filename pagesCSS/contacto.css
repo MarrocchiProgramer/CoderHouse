@@ -4,70 +4,243 @@
 }
 
 body{
+    background-image: url(/imagenes/imagenes-aire/background2.webp);
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
     width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-
+/* EMPIEZA HEADER */
 #header{
-   display: flex;
-   flex-direction: column;
-   width: 100%; 
-   height: 20%;
+    display: flex;
+    z-index: 200;
+    flex-direction: column;
+    width: 100%; 
+    height: 10%;
 }
+ 
 
+.navbar{
+    background-color: #473EAB;
+    height: 100px;
+}
+ 
+.navbar-logo{
+    height: 80px;
+    width: 80px;
+}
+ 
+.nav-link{
+    margin-right: 15px;
+    color: white;
+    background-color: #473EAB;
+    padding-left: 10px;
+}
+ 
+ 
+.navbar-toggler{
+    margin-right: 30px;
+}
+ 
+.dropdown-menu{
+    background-color: #8279e4;
+}
+ 
+ 
 .section1-header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 30%;
+    padding: 15px;
     background-color: #60646D;
 }
-
+ 
 .info-section1, .info2-section1{
     display: inline;
     font-size: 16px;
 }
-
+ 
 .info-section1 span, .info2-section1 span {
     font-weight: bold;
 }
 
-.section2-header{
+/* TERMINA HEADER */
+
+/* EMPIEZA MAIN */
+#main{
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 350px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.4) ;
+    border-radius: 30px;
+    padding: 15px;
+    flex-direction: column;
+}
+
+
+.nombre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    font-weight: bold;
+}
+.tel{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    font-weight: bold;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    font-weight: bold;
+}
+
+.deplegable{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    font-weight: bold;
+}
+
+.textarea{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+    font-weight: bold;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+
+
+.input-nombre:focus, .input-tel:focus, .input-email:focus{
+    background-color:rgb(235, 235, 235);
+    height: 30px;
+    transform: scale(1);
+    transition: ease-in-out;
+  } 
+
+.input-nombre, .input-tel, .input-email{
+    margin-left: 18px;
+    padding: 5px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.envio{
+    background-color: #1b5089;
+    color: white;
+    margin: 50px 0 0 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 80px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.envio:hover{
+    cursor: pointer;
+}
+
+
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    contain: strict;
     width: 100%;
-    height: 70%;
-    background-color: #473eab;
+    height: 450px;
+    margin-top: 50px;
+    background-color: #473EAB;
 }
 
-.logo-header{
-    margin-left: 40px;
-    height: 90px;
-    width: 90px;
-}
 
-.links{
-    display: flex;
-    justify-content: space-between;
+
+.contacto li{
     list-style: none;
-    width: 400px;
-    margin-left: 30px;
+    padding: 10px;
+    border-bottom: 2px solid #555555;
 }
 
-.links-contacto, .links-servicios, .links-ubicacion, .links-producto,.links-home{
-    text-decoration: none;
-    color: white;
-    padding: 4px;
-    border-radius: 4px;
-}
-.links-contacto:link, .links-servicios:link, .links-ubicacion:link, .links-producto:link,.links-home:link{
+.contacto a,h5{
+    display: inline;
     text-decoration: none;
     color: white;
 }
-.links-contacto:hover, .links-servicios:hover, .links-ubicacion:hover, .links-producto:hover,.links-home:hover{
-    text-decoration: none;
-    background-color: #2e6da4;
+
+
+.contacto a:link{
+    list-style: none;
     color: white;
+}
+
+.contacto a:visited{
+    list-style: none;
+    color: white;
+}
+
+.contacto h5{
+    font-size: 13px;
+}
+
+.footer-img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+}
+
+.footer-text{
+    color: #313131;
+    text-align: justify;
+}
+
+.footer-contacto{
+    margin-top: 40px;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    /* margin-top: -90px; */
+}
+
+.footer-derechos small{
+    position: relative;
+    margin-top: 400px;
+    margin-left: 150px;
 }

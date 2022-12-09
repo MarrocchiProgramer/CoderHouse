@@ -1,81 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="/pagesCSS/productos.css">
-	<title>Producto</title>
-</head>
-<body>
-	<!-- Empieza header -->
-	<header id="header">
-		<section class="section1-header">
-		  <h4 class="info-section1">Horarios de atencion: <span>CONSULTAR</span>  ||  Zona:<span> CABA - PBA</span></h4>
-		  <h4 class="info2-section1">Tel:<span> 11-6238-2718</span></h4>
-		</section>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="stylesheet" href="/pagesCSS/productos.css">
+		<title>Producto</title>
+	</head>
+	<body>
+		<!-- Empieza header -->
 
-		<section class="section2-header">
-		  	<img class="logo-header" src="/imagenes/LogoVP.png" alt="logo">
-		
-			<ul class="links">
-			  <li><a class="links-contacto" href="../index.html">Home</a></li>
-			  <li><a class="links-servicios" href="/pages/contacto.html">Servicios</a></li>
-			  <li><a class="links-ubicacion" href="/pages/ubicacion.html">Ubicacion</a></li>
-			  <li><a class="links-producto" href="/pages/producto.html">Producto</a></li>
-			  <li><a class="links-home" href="/pages/contacto.html">Contacto</a></li>
-			</ul>
-		</section>
-	</header>
-	<!--termina header  -->
+		<header id="header">
+			<section class="section1-header">
+				<h4 class="info-section1">Horarios de atencion: <span>CONSULTAR</span>  ||  Zona:<span> CABA - PBA</span></h4>
+				<h4 class="info2-section1">Tel:<span> 11-6238-2718</span></h4>
+			</section>
 
-	<!-- empieza main -->
-	<main id="main">
-		<!-- cree una tabla con imagenes,
-		proximamente lo reemplazare con grid,
-		y usare flexbox para las cajas -->
-		<section class="productos">
-			<table class="table-imagenes">
-				<h2>ALGUNOS DE NUESTROS SERVICIOS REALIZADOS</h2>
-				<tr class="fila-imagenes-1">
-					<td class="celda-imagenes"><img class="imagen" src="/imagenes/imagenes-aire/imagen1.jpeg" alt="aire-acondicionado"></td>
-					<td class="celda-imagenes"><img class="imagen" src="/imagenes/imagenes-aire/imagen2.jpeg" alt="aire-acondicionado"></td>
-					<td class="celda-imagenes"><img class="imagen" src="/imagenes/imagenes-aire/imagen3.jpeg" alt="aire-acondicionado"></td>
-				</tr>
-				<tr class="fila-imagenes-2">
-					<td class="celda-imagenes"><img class="imagen" src="/imagenes/imagenes-aire/imagen4.jpeg" alt="aire-acondicionado"></td>
-					<td class="celda-imagenes"><img class="imagen" src="/imagenes/imagenes-aire/imagen5.jpeg" alt="aire-acondicionado"></td>
-					<td class="celda-imagenes"><img class="imagen" src="/imagenes/imagenes-aire/imagen6.jpeg" alt="aire-acondicionado"></td>
-				</tr>
-			</table>
-		</section>
-	</main>
+
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="/index.html"><img class="navbar-logo" src="/imagenes/LogoVP.png" alt="Logo"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Servicios
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item text-center" href="/pages/servicios.html">Servicios</a></li>
+						  <li><a class="dropdown-item text-center" href="/pages/ubicacion.html">Ubicacion</a></li>
+						  <li><a class="dropdown-item text-center" href="/pages/producto.html">Producto</a></li>
+						  <li><a class="dropdown-item text-center" href="/pages/contacto.html">Contacto</a></li>
+						</ul>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			</nav>
+		</header>
+		<!--termina header  -->
+		<!-- empieza main -->
+		<main>
+			<section id="section1-main">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner col-lg-12">
+						<div class="carousel-item active">
+							<img src="../imagenes/imagenes-aire/imagen1.jpeg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../imagenes/imagenes-aire/imagen2.jpeg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../imagenes/imagenes-aire/imagen4.jpeg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../imagenes/imagenes-aire/imagen16.jpeg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../imagenes/imagenes-aire/imagen13.jpeg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="section2-main">
+				<div id="galeria" class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+								  <div class="flip-card-front">
+									<img src="/imagenes/imagenes-aire/imagen1.jpeg" alt="imagen compresor aire">
+								  </div>
+								  <div class="flip-card-back">
+									<div class="contenido">
+										<h2>❄️</h2>
+										<p>
+											Servicio de limpieza, trabajo con bomba de vacio, prueba de perdida 
+											con hidrogeno, etc.
+										</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+								  <div class="flip-card-front">
+									<img src="/imagenes/imagenes-aire/imagen4.jpeg" alt="Avatar">
+								  </div>
+								  <div class="flip-card-back">
+									<div class="contenido">
+										<h2>❄️</h2>
+										<p>
+											Instalacion de Split, puesta en funcionamiento.
+										</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+								  <div class="flip-card-front">
+									<img src="/imagenes/imagenes-aire/imagen13.jpeg" alt="Avatar">
+								  </div>
+								  <div class="flip-card-back">
+									<div class="contenido">
+										<h2>❄️</h2>
+										<p>
+											Instalacion  y desinstalacion de compresor.
+										</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+								  <div class="flip-card-front">
+									<img src="/imagenes/imagenes-aire/imagen2.jpeg" alt="imagen compresor aire">
+								  </div>
+								  <div class="flip-card-back">
+									<div class="contenido">
+										<h2>❄️</h2>
+										<p>
+											Servicio de limpieza, trabajo con bomba de vacio, prueba de perdida 
+											con hidrogeno, etc.
+										</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+								  <div class="flip-card-front">
+									<img src="/imagenes/imagenes-aire/imagen8.jpeg" alt="Avatar">
+								  </div>
+								  <div class="flip-card-back">
+									<div class="contenido">
+										<h2>❄️</h2>
+										<p>
+											Carga de gas y control de presion.              
+										</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+								  <div class="flip-card-front">
+									<img src="/imagenes/imagenes-aire/imagen21.jpeg" alt="Avatar">
+								  </div>
+								  <div class="flip-card-back">
+									<div class="contenido">
+										<h2>❄️</h2>
+										<p>
+											Instalacion y instalacion de compresor.
+										</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>	
+					</div>   
+				</div>
+			</section>
+		</main>	
+	</body>
 	<!-- termina main -->
-
 	<!-- empieza footer -->
 	<footer id="footer">
-		<ul class="footer-contacto">
-			<h3>CONTACTANOS</h3>
-			<li class="logo_footer-instagram">
-				<i class='bx bxl-instagram-alt'></i>
-				<a href="https://www.instagram.com/fabian.e_vp/">Instagram</a>
-			</li>
-			<li class="logo_footer-linkedin">
-				<i class='bx bxl-linkedin-square'></i>
-				<a href="#">Linkedin</a>
-			</li>
-			<li class="logo_footer-whatsapp">
-				<i class='bx bxl-whatsapp'></i>
-				<h5>11-6238-2718</h5>
-			</li>
-		</ul>
 
-		<section class="footer-info">
-			<img class="footer-img" src="/imagenes/LogoVP.png" alt="">
-			<p class="footer-text">Somos un joven emprendimiento dedicado a la instalacion, reparacion y mantenimiento de aires acondicionados</p>
-		</section>
+		<div class="text-center">
+			<div class="row">
+			  <div class="col-sm-12">
+				<section class="footer-contacto">
+					<ul class="contacto">
+						<h3>CONTACTANOS</h3>
+						<li class="logo_footer-instagram">
+						  <i class='bx bxl-instagram-alt'></i>
+						  <a href="https://www.instagram.com/aires_acondicionados_vp/">Instagram</a>
+						</li>
+						<li class="logo_footer-linkedin">
+						  <i class='bx bxl-linkedin-square'></i>
+						  <a href="#">Linkedin</a>
+						</li>
+						<li class="logo_footer-whatsapp">
+						  <i class='bx bxl-whatsapp'></i>
+						  <h5>11-6238-2718</h5>
+						</li>
+					</ul>
+				</section>
+			  </div>
+			  
+			  <div class="col-md-6">
+				<section class="footer-info">
+					<img class="footer-img" src="/imagenes/LogoVP.png" alt="">
+					<p class="footer-text">Somos un joven emprendimiento dedicado a la instalacion, reparacion y mantenimiento de aires acondicionados.</p>
+				</section>
+			  </div>
+			  <div class="col-md-6">
+				<section class="footer-derechos">
+					<small>&copy; 2022 <b>Acondicionados VP</b> - Todos los derechos reservados</small>
+				</section>
+			  </div>
+			</div>
+		  </div>
+
 	</footer>
 	<!-- termina footer -->
-</body>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </html>
